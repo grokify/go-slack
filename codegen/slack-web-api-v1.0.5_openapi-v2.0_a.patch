@@ -1,0 +1,334 @@
+--- slack-web-api-v1.0.5_openapi-v2.0.json	2018-04-12 21:21:50.000000000 -0700
++++ slack-web-api-v1.0.5_openapi-v2.0_a.json	2018-04-12 22:57:10.000000000 -0700
+@@ -3524,73 +3524,33 @@
+                             "properties": {
+                                 "items": {
+                                     "items": {
+-                                        "items": [
+-                                            {
+-                                                "additionalProperties": true,
+-                                                "required": [
+-                                                    "type",
+-                                                    "channel",
++                                        "additionalProperties": true,
++                                        "required": [
++                                            "type"
++                                        ],
++                                        "type": "object",
++                                        "properties": {
++                                            "message": {
++                                                "$ref": "#/definitions/objs_message"
++                                            },
++                                            "type": {
++                                                "enum": [
++                                                    "file",
++                                                    "file_comment",
+                                                     "message"
+                                                 ],
+-                                                "type": "object",
+-                                                "properties": {
+-                                                    "message": {
+-                                                        "$ref": "#/definitions/objs_message"
+-                                                    },
+-                                                    "type": {
+-                                                        "enum": [
+-                                                            "message"
+-                                                        ],
+-                                                        "type": "string"
+-                                                    },
+-                                                    "channel": {
+-                                                        "$ref": "#/definitions/defs_channel"
+-                                                    }
+-                                                }
++                                                "type": "string"
+                                             },
+-                                            {
+-                                                "additionalProperties": true,
+-                                                "required": [
+-                                                    "type",
+-                                                    "file"
+-                                                ],
+-                                                "type": "object",
+-                                                "properties": {
+-                                                    "type": {
+-                                                        "enum": [
+-                                                            "file"
+-                                                        ],
+-                                                        "type": "string"
+-                                                    },
+-                                                    "file": {
+-                                                        "$ref": "#/definitions/objs_file"
+-                                                    }
+-                                                }
++                                            "channel": {
++                                                "$ref": "#/definitions/defs_channel"
+                                             },
+-                                            {
+-                                                "additionalProperties": true,
+-                                                "required": [
+-                                                    "type",
+-                                                    "file",
+-                                                    "comment"
+-                                                ],
+-                                                "type": "object",
+-                                                "properties": {
+-                                                    "comment": {
+-                                                        "$ref": "#/definitions/objs_comment"
+-                                                    },
+-                                                    "type": {
+-                                                        "enum": [
+-                                                            "file_comment"
+-                                                        ],
+-                                                        "type": "string"
+-                                                    },
+-                                                    "file": {
+-                                                        "$ref": "#/definitions/objs_file"
+-                                                    }
+-                                                }
++                                            "comment": {
++                                                "$ref": "#/definitions/objs_comment"
++                                            },
++                                            "file": {
++                                                "$ref": "#/definitions/objs_file"
+                                             }
+-                                        ]
++                                        }
+                                     },
+                                     "type": "array"
+                                 },
+@@ -16259,130 +16219,82 @@
+                                     "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "messages": {
+-                                    "items": {
+-                                        "items": [
+-                                            {
+-                                                "additionalProperties": true,
+-                                                "required": [
+-                                                    "type",
+-                                                    "user",
+-                                                    "text",
+-                                                    "thread_ts",
+-                                                    "reply_count",
+-                                                    "replies",
+-                                                    "subscribed",
+-                                                    "ts"
+-                                                ],
+-                                                "type": "object",
+-                                                "properties": {
+-                                                    "thread_ts": {
+-                                                        "$ref": "#/definitions/defs_ts"
+-                                                    },
+-                                                    "subscribed": {
+-                                                        "type": "boolean"
+-                                                    },
+-                                                    "source_team": {
+-                                                        "$ref": "#/definitions/defs_team"
+-                                                    },
+-                                                    "last_read": {
+-                                                        "$ref": "#/definitions/defs_ts"
+-                                                    },
+-                                                    "user_profile": {
+-                                                        "$ref": "#/definitions/objs_user_profile_short"
+-                                                    },
+-                                                    "text": {
+-                                                        "type": "string"
+-                                                    },
+-                                                    "team": {
+-                                                        "$ref": "#/definitions/defs_team"
+-                                                    },
+-                                                    "ts": {
+-                                                        "$ref": "#/definitions/defs_ts"
+-                                                    },
+-                                                    "unread_count": {
+-                                                        "type": "integer"
+-                                                    },
+-                                                    "reply_count": {
+-                                                        "type": "integer"
+-                                                    },
+-                                                    "user": {
+-                                                        "$ref": "#/definitions/defs_user_id"
+-                                                    },
+-                                                    "replies": {
+-                                                        "items": {
+-                                                            "additionalProperties": true,
+-                                                            "required": [
+-                                                                "user",
+-                                                                "ts"
+-                                                            ],
+-                                                            "type": "object",
+-                                                            "properties": {
+-                                                                "ts": {
+-                                                                    "$ref": "#/definitions/defs_ts"
+-                                                                },
+-                                                                "user": {
+-                                                                    "$ref": "#/definitions/defs_user_id"
+-                                                                }
+-                                                            }
++                                "items": {
++                                        "additionalProperties": true,
++                                        "required": [
++                                            "type",
++                                            "user",
++                                            "text",
++                                            "thread_ts",
++                                            "ts"
++                                        ],
++                                        "type": "object",
++                                        "properties": {
++                                            "thread_ts": {
++                                                "$ref": "#/definitions/defs_ts"
++                                            },
++                                            "subscribed": {
++                                                "type": "boolean"
++                                            },
++                                            "source_team": {
++                                                "$ref": "#/definitions/defs_team"
++                                            },
++                                            "last_read": {
++                                                "$ref": "#/definitions/defs_ts"
++                                            },
++                                            "user_profile": {
++                                                "$ref": "#/definitions/objs_user_profile_short"
++                                            },
++                                            "text": {
++                                                "type": "string"
++                                            },
++                                            "team": {
++                                                "$ref": "#/definitions/defs_team"
++                                            },
++                                            "ts": {
++                                                "$ref": "#/definitions/defs_ts"
++                                            },
++                                            "unread_count": {
++                                                "type": "integer"
++                                            },
++                                            "reply_count": {
++                                                "type": "integer"
++                                            },
++                                            "user": {
++                                                "$ref": "#/definitions/defs_user_id"
++                                            },
++                                            "replies": {
++                                                "items": {
++                                                    "additionalProperties": true,
++                                                    "required": [
++                                                        "user",
++                                                        "ts"
++                                                    ],
++                                                    "type": "object",
++                                                    "properties": {
++                                                        "ts": {
++                                                            "$ref": "#/definitions/defs_ts"
+                                                         },
+-                                                        "type": "array"
+-                                                    },
+-                                                    "type": {
+-                                                        "type": "string"
+-                                                    },
+-                                                    "user_team": {
+-                                                        "$ref": "#/definitions/defs_team"
++                                                        "user": {
++                                                            "$ref": "#/definitions/defs_user_id"
++                                                        }
+                                                     }
+-                                                }
++                                                },
++                                                "type": "array"
+                                             },
+-                                            {
+-                                                "additionalProperties": true,
+-                                                "required": [
+-                                                    "type",
+-                                                    "user",
+-                                                    "text",
+-                                                    "thread_ts",
+-                                                    "parent_user_id",
+-                                                    "ts"
+-                                                ],
+-                                                "type": "object",
+-                                                "properties": {
+-                                                    "thread_ts": {
+-                                                        "$ref": "#/definitions/defs_ts"
+-                                                    },
+-                                                    "source_team": {
+-                                                        "$ref": "#/definitions/defs_team"
+-                                                    },
+-                                                    "user_profile": {
+-                                                        "$ref": "#/definitions/objs_user_profile_short"
+-                                                    },
+-                                                    "text": {
+-                                                        "type": "string"
+-                                                    },
+-                                                    "ts": {
+-                                                        "$ref": "#/definitions/defs_ts"
+-                                                    },
+-                                                    "user": {
+-                                                        "$ref": "#/definitions/defs_user_id"
+-                                                    },
+-                                                    "team": {
+-                                                        "$ref": "#/definitions/defs_team"
+-                                                    },
+-                                                    "parent_user_id": {
+-                                                        "$ref": "#/definitions/defs_user_id"
+-                                                    },
+-                                                    "is_starred": {
+-                                                        "type": "boolean"
+-                                                    },
+-                                                    "type": {
+-                                                        "type": "string"
+-                                                    },
+-                                                    "user_team": {
+-                                                        "$ref": "#/definitions/defs_team"
+-                                                    }
+-                                                }
++                                            "type": {
++                                                "type": "string"
++                                            },
++                                            "user_team": {
++                                                "$ref": "#/definitions/defs_team"
++                                            },
++                                            "parent_user_id": {
++                                                "$ref": "#/definitions/defs_user_id"
++                                            },
++                                            "is_starred": {
++                                                "type": "boolean"
+                                             }
+-                                        ]
++                                        }
+                                     },
+                                     "type": "array"
+                                 }
+@@ -17866,7 +17778,9 @@
+                     "$ref": "#/definitions/defs_file_id"
+                 },
+                 "ims": {
+-                    "items": {},
++                    "items": {
++                        "$ref": "#/definitions/objs_im"
++                    },
+                     "type": "array"
+                 },
+                 "thumb_720_w": {
+@@ -17923,7 +17837,9 @@
+                     "type": "string"
+                 },
+                 "groups": {
+-                    "items": {},
++                    "items": {
++                        "$ref": "#/definitions/objs_group"
++                    },
+                     "type": "array"
+                 },
+                 "thumb_960": {
+@@ -18644,7 +18560,9 @@
+             }
+         },
+         "objs_comments": {
+-            "items": {},
++            "items": {
++                "$ref": "#/definitions/objs_comment"
++            },
+             "type": "array",
+             "title": "file comments object"
+         },

@@ -1,0 +1,3226 @@
+--- slack-web-api-v1.0.5_openapi-v2.0_b.json	2018-04-13 00:12:09.000000000 -0700
++++ slack-web-api-v1.0.5_openapi-v2.0_a.json	2018-04-12 22:57:10.000000000 -0700
+@@ -31,13 +31,13 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "ts": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_ts"
+                                 },
+                                 "channel": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_channel"
+                                 }
+                             }
+                         },
+@@ -118,7 +118,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -166,7 +166,7 @@
+                                     "$ref": "#/definitions/objs_comment"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -250,7 +250,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -297,7 +297,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "group": {
+                                     "$ref": "#/definitions/objs_group"
+@@ -368,7 +368,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -391,7 +391,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -480,7 +480,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -503,7 +503,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -579,7 +579,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -602,7 +602,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -679,7 +679,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -702,7 +702,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -779,7 +779,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -802,7 +802,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -903,7 +903,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -926,7 +926,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1018,7 +1018,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -1047,7 +1047,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "already_closed": {
+                                     "type": "boolean"
+@@ -1119,7 +1119,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -1172,7 +1172,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "additionalProperties": true,
+@@ -1182,7 +1182,7 @@
+                                     "type": "object",
+                                     "properties": {
+                                         "last_read": {
+-                                            "type": "string"
++                                            "$ref": "#/definitions/defs_ts"
+                                         },
+                                         "created": {
+                                             "type": "string"
+@@ -1194,7 +1194,7 @@
+                                             "type": "boolean"
+                                         },
+                                         "user": {
+-                                            "type": "string"
++                                            "$ref": "#/definitions/defs_user_id"
+                                         },
+                                         "unread_count_display": {
+                                             "type": "number"
+@@ -1203,7 +1203,7 @@
+                                             "type": "boolean"
+                                         },
+                                         "id": {
+-                                            "type": "string"
++                                            "$ref": "#/definitions/defs_dm_id"
+                                         },
+                                         "latest": {
+                                             "$ref": "#/definitions/objs_message"
+@@ -1289,7 +1289,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -1331,7 +1331,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "groups": {
+                                     "minItems": 1,
+@@ -1409,7 +1409,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1432,7 +1432,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1524,7 +1524,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1547,7 +1547,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1618,7 +1618,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1641,7 +1641,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1706,7 +1706,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -1757,7 +1757,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1822,7 +1822,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1845,7 +1845,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -1910,7 +1910,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -1956,7 +1956,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_channel"
+@@ -2079,7 +2079,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2102,7 +2102,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2174,7 +2174,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -2217,7 +2217,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2288,7 +2288,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2311,7 +2311,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2376,7 +2376,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2399,7 +2399,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2488,7 +2488,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -2537,7 +2537,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "messages": {
+                                     "minItems": 1,
+@@ -2698,7 +2698,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -2742,7 +2742,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2813,7 +2813,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2836,7 +2836,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -2919,7 +2919,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -2968,7 +2968,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "file": {
+                                     "$ref": "#/definitions/objs_file"
+@@ -3071,7 +3071,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -3094,7 +3094,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -3170,7 +3170,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -3215,7 +3215,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "user": {
+                                     "$ref": "#/definitions/objs_user"
+@@ -3326,7 +3326,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -3372,7 +3372,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "user": {
+                                     "$ref": "#/definitions/objs_user"
+@@ -3477,7 +3477,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -3542,7 +3542,7 @@
+                                                 "type": "string"
+                                             },
+                                             "channel": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_channel"
+                                             },
+                                             "comment": {
+                                                 "$ref": "#/definitions/objs_comment"
+@@ -3558,7 +3558,7 @@
+                                     "$ref": "#/definitions/objs_paging"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -3764,7 +3764,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "detail": {
+                                     "type": "string"
+@@ -3794,7 +3794,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -3908,7 +3908,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -3931,7 +3931,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -3995,7 +3995,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4018,7 +4018,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4077,7 +4077,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4102,7 +4102,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4323,7 +4323,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -4367,7 +4367,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4439,7 +4439,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4462,7 +4462,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4528,7 +4528,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -4580,7 +4580,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4669,7 +4669,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4692,7 +4692,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4775,7 +4775,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4798,7 +4798,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -4873,7 +4873,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -5000,7 +5000,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -5026,7 +5026,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -5095,7 +5095,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -5139,7 +5139,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "group": {
+                                     "$ref": "#/definitions/objs_group"
+@@ -5212,7 +5212,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -5235,7 +5235,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -5323,7 +5323,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -5357,7 +5357,7 @@
+                                     "type": "array"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "response_metadata": {
+                                     "additionalProperties": true,
+@@ -5525,7 +5525,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -5548,7 +5548,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -5617,7 +5617,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -5666,7 +5666,7 @@
+                                     ],
+                                     "properties": {
+                                         "ok": {
+-                                            "type": "boolean"
++                                            "$ref": "#/definitions/defs_ok_true"
+                                         },
+                                         "message": {
+                                             "$ref": "#/definitions/objs_message"
+@@ -5678,7 +5678,7 @@
+                                             "type": "string"
+                                         },
+                                         "channel": {
+-                                            "type": "string"
++                                            "$ref": "#/definitions/defs_channel"
+                                         }
+                                     }
+                                 },
+@@ -5691,7 +5691,7 @@
+                                     ],
+                                     "properties": {
+                                         "ok": {
+-                                            "type": "boolean"
++                                            "$ref": "#/definitions/defs_ok_true"
+                                         },
+                                         "type": {
+                                             "enum": [
+@@ -5717,7 +5717,7 @@
+                                             "$ref": "#/definitions/objs_comment"
+                                         },
+                                         "ok": {
+-                                            "type": "boolean"
++                                            "$ref": "#/definitions/defs_ok_true"
+                                         },
+                                         "type": {
+                                             "enum": [
+@@ -5868,7 +5868,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -5899,7 +5899,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "messages": {
+                                     "minItems": 1,
+@@ -6023,7 +6023,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -6076,7 +6076,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6159,7 +6159,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6182,7 +6182,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6262,10 +6262,10 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_channel"
+                                 }
+                             }
+                         },
+@@ -6337,7 +6337,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6360,7 +6360,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6468,7 +6468,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -6527,7 +6527,7 @@
+                                     "$ref": "#/definitions/objs_paging"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6625,7 +6625,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6648,7 +6648,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6719,7 +6719,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6742,7 +6742,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -6875,7 +6875,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -6902,7 +6902,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -6980,7 +6980,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -7028,14 +7028,14 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "members": {
+                                     "minItems": 1,
+                                     "uniqueItems": true,
+                                     "type": "array",
+                                     "items": {
+-                                        "type": "string"
++                                        "$ref": "#/definitions/defs_user_id"
+                                     }
+                                 },
+                                 "response_metadata": {
+@@ -7136,7 +7136,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -7193,7 +7193,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -7280,7 +7280,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -7330,7 +7330,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -7414,7 +7414,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -7460,7 +7460,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -7526,7 +7526,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -7590,7 +7590,7 @@
+                                                             "$ref": "#/definitions/objs_file"
+                                                         },
+                                                         "created_by": {
+-                                                            "type": "string"
++                                                            "$ref": "#/definitions/defs_user_id"
+                                                         },
+                                                         "created": {
+                                                             "type": "integer"
+@@ -7612,7 +7612,7 @@
+                                                             "$ref": "#/definitions/objs_file"
+                                                         },
+                                                         "created_by": {
+-                                                            "type": "string"
++                                                            "$ref": "#/definitions/defs_user_id"
+                                                         },
+                                                         "created": {
+                                                             "type": "integer"
+@@ -7634,10 +7634,10 @@
+                                                             "type": "string"
+                                                         },
+                                                         "channel": {
+-                                                            "type": "string"
++                                                            "$ref": "#/definitions/defs_channel"
+                                                         },
+                                                         "created_by": {
+-                                                            "type": "string"
++                                                            "$ref": "#/definitions/defs_user_id"
+                                                         },
+                                                         "created": {
+                                                             "type": "integer"
+@@ -7649,7 +7649,7 @@
+                                             "type": "array"
+                                         },
+                                         "ok": {
+-                                            "type": "boolean"
++                                            "$ref": "#/definitions/defs_ok_true"
+                                         }
+                                     }
+                                 },
+@@ -7665,7 +7665,7 @@
+                                             "type": "integer"
+                                         },
+                                         "ok": {
+-                                            "type": "boolean"
++                                            "$ref": "#/definitions/defs_ok_true"
+                                         }
+                                     }
+                                 }
+@@ -7770,7 +7770,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "type": "string"
+@@ -7801,7 +7801,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -7866,7 +7866,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -7889,7 +7889,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -7950,7 +7950,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "type": "string"
+@@ -7989,7 +7989,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "connection_count": {
+                                     "type": "integer"
+@@ -8060,7 +8060,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8083,7 +8083,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8237,7 +8237,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -8263,7 +8263,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "not_in_channel": {
+                                     "enum": [
+@@ -8338,7 +8338,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -8390,7 +8390,7 @@
+                                     "$ref": "#/definitions/objs_paging"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "file": {
+                                     "$ref": "#/definitions/objs_file"
+@@ -8470,7 +8470,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8493,7 +8493,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8558,7 +8558,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8581,7 +8581,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8691,7 +8691,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8714,7 +8714,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8803,7 +8803,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8826,7 +8826,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -8891,7 +8891,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -8935,7 +8935,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9006,7 +9006,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9029,7 +9029,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9087,7 +9087,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9110,7 +9110,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9192,7 +9192,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9215,7 +9215,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9312,7 +9312,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -9338,7 +9338,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9423,10 +9423,10 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "message_ts": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_ts"
+                                 }
+                             }
+                         },
+@@ -9563,7 +9563,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -9590,7 +9590,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -9723,7 +9723,7 @@
+                                     "title": "The workspace/team ID containing the mapped users"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "enterprise_id": {
+                                     "type": "string",
+@@ -9821,7 +9821,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9844,7 +9844,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9915,7 +9915,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -9938,7 +9938,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10003,7 +10003,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -10062,13 +10062,13 @@
+                                     "title": "Updated message text"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "ts": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_ts"
+                                 },
+                                 "channel": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_channel"
+                                 }
+                             }
+                         },
+@@ -10173,7 +10173,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10196,7 +10196,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10311,7 +10311,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10334,7 +10334,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10405,7 +10405,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10428,7 +10428,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10500,7 +10500,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10523,7 +10523,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10588,7 +10588,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10611,7 +10611,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10686,7 +10686,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -10737,7 +10737,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "group": {
+                                     "$ref": "#/definitions/objs_group"
+@@ -10811,7 +10811,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10834,7 +10834,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10899,7 +10899,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -10922,7 +10922,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -11003,7 +11003,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -11048,7 +11048,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "team": {
+                                     "$ref": "#/definitions/objs_team"
+@@ -11135,7 +11135,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -11167,7 +11167,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "messages": {
+                                     "minItems": 1,
+@@ -11295,7 +11295,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -11352,7 +11352,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_channel"
+@@ -11459,7 +11459,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -11482,7 +11482,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -11572,7 +11572,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -11625,7 +11625,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "group": {
+                                     "$ref": "#/definitions/objs_group"
+@@ -11717,7 +11717,7 @@
+                                     "type": "array"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "response_metadata": {
+                                     "additionalProperties": true,
+@@ -11917,7 +11917,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -11944,7 +11944,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -12021,7 +12021,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12044,7 +12044,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12146,7 +12146,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12169,7 +12169,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12342,7 +12342,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -12372,7 +12372,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -12492,7 +12492,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12515,7 +12515,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12580,7 +12580,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12603,7 +12603,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12686,7 +12686,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -12713,7 +12713,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -12829,7 +12829,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12852,7 +12852,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12925,7 +12925,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -12948,7 +12948,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13008,7 +13008,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -13058,7 +13058,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "messages": {
+                                     "minItems": 1,
+@@ -13181,7 +13181,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13204,7 +13204,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13359,7 +13359,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13382,7 +13382,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13482,7 +13482,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13505,7 +13505,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13577,7 +13577,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13600,7 +13600,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13671,7 +13671,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13694,7 +13694,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13760,7 +13760,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -13811,7 +13811,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13900,7 +13900,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13923,7 +13923,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -13988,7 +13988,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14011,7 +14011,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14083,7 +14083,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -14133,7 +14133,7 @@
+                                     "$ref": "#/definitions/objs_comment"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14214,7 +14214,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -14266,7 +14266,7 @@
+                                     "type": "array"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14397,7 +14397,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14420,7 +14420,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14587,7 +14587,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14610,7 +14610,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14699,7 +14699,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14722,7 +14722,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -14814,7 +14814,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -14844,7 +14844,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "users": {
+                                     "additionalProperties": true,
+@@ -14925,7 +14925,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -14975,7 +14975,7 @@
+                                     "type": "integer"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "members": {
+                                     "minItems": 1,
+@@ -15164,10 +15164,10 @@
+                                         "type": "object",
+                                         "properties": {
+                                             "ok": {
+-                                                "type": "boolean"
++                                                "$ref": "#/definitions/defs_ok_false"
+                                             },
+                                             "user": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_user_id"
+                                             },
+                                             "error": {
+                                                 "enum": [
+@@ -15208,7 +15208,7 @@
+                                     }
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -15270,7 +15270,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_conversation"
+@@ -15388,7 +15388,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -15435,13 +15435,13 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "url": {
+                                     "type": "string"
+                                 },
+                                 "team_id": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_team"
+                                 },
+                                 "user": {
+                                     "type": "string"
+@@ -15450,7 +15450,7 @@
+                                     "type": "string"
+                                 },
+                                 "user_id": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_user_id"
+                                 }
+                             }
+                         },
+@@ -15515,7 +15515,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -15565,7 +15565,7 @@
+                                     }
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -15714,7 +15714,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -15737,7 +15737,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -15809,7 +15809,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -15866,7 +15866,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "channel": {
+                                     "$ref": "#/definitions/objs_channel"
+@@ -15980,7 +15980,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16003,7 +16003,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16079,7 +16079,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16102,7 +16102,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16186,7 +16186,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -16216,7 +16216,7 @@
+                                     "type": "boolean"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "messages": {
+                                 "items": {
+@@ -16231,16 +16231,16 @@
+                                         "type": "object",
+                                         "properties": {
+                                             "thread_ts": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_ts"
+                                             },
+                                             "subscribed": {
+                                                 "type": "boolean"
+                                             },
+                                             "source_team": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_team"
+                                             },
+                                             "last_read": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_ts"
+                                             },
+                                             "user_profile": {
+                                                 "$ref": "#/definitions/objs_user_profile_short"
+@@ -16249,10 +16249,10 @@
+                                                 "type": "string"
+                                             },
+                                             "team": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_team"
+                                             },
+                                             "ts": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_ts"
+                                             },
+                                             "unread_count": {
+                                                 "type": "integer"
+@@ -16261,7 +16261,7 @@
+                                                 "type": "integer"
+                                             },
+                                             "user": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_user_id"
+                                             },
+                                             "replies": {
+                                                 "items": {
+@@ -16273,10 +16273,10 @@
+                                                     "type": "object",
+                                                     "properties": {
+                                                         "ts": {
+-                                                            "type": "string"
++                                                            "$ref": "#/definitions/defs_ts"
+                                                         },
+                                                         "user": {
+-                                                            "type": "string"
++                                                            "$ref": "#/definitions/defs_user_id"
+                                                         }
+                                                     }
+                                                 },
+@@ -16286,10 +16286,10 @@
+                                                 "type": "string"
+                                             },
+                                             "user_team": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_team"
+                                             },
+                                             "parent_user_id": {
+-                                                "type": "string"
++                                                "$ref": "#/definitions/defs_user_id"
+                                             },
+                                             "is_starred": {
+                                                 "type": "boolean"
+@@ -16454,7 +16454,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16477,7 +16477,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16588,7 +16588,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -16638,13 +16638,13 @@
+                                     "$ref": "#/definitions/objs_message"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 },
+                                 "ts": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_ts"
+                                 },
+                                 "channel": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_channel"
+                                 }
+                             }
+                         },
+@@ -16805,7 +16805,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16828,7 +16828,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -16922,7 +16922,7 @@
+                                     "type": "string"
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "provided": {
+                                     "type": "string"
+@@ -16948,7 +16948,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17017,7 +17017,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_false"
+                                 },
+                                 "error": {
+                                     "enum": [
+@@ -17079,7 +17079,7 @@
+                                     }
+                                 },
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17210,7 +17210,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17233,7 +17233,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17298,7 +17298,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17321,7 +17321,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17386,7 +17386,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17409,7 +17409,7 @@
+                             "type": "object",
+                             "properties": {
+                                 "ok": {
+-                                    "type": "boolean"
++                                    "$ref": "#/definitions/defs_ok_true"
+                                 }
+                             }
+                         },
+@@ -17567,13 +17567,13 @@
+                     "type": "integer"
+                 },
+                 "user": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 },
+                 "is_im": {
+                     "type": "boolean"
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_dm_id"
+                 }
+             },
+             "title": "IM Object"
+@@ -17633,7 +17633,7 @@
+                     "type": "string"
+                 },
+                 "team_id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "is_admin": {
+                     "type": "boolean"
+@@ -17654,7 +17654,7 @@
+                     "type": "boolean"
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 },
+                 "color": {
+                     "pattern": "^[a-fA-F0-9]{6}$",
+@@ -17708,7 +17708,7 @@
+             "additionalProperties": true,
+             "title": "file object with ID only",
+             "type": "string",
+-            "type": "string"
++            "$ref": "#/definitions/defs_file_id"
+         },
+         "defs_ts": {
+             "pattern": "^\\d{10}\\.\\d{6}$",
+@@ -17775,7 +17775,7 @@
+                     "format": "uri"
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_file_id"
+                 },
+                 "ims": {
+                     "items": {
+@@ -17880,7 +17880,7 @@
+                 },
+                 "pinned_to": {
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_channel"
+                     },
+                     "type": "array"
+                 },
+@@ -17900,7 +17900,7 @@
+                 "channels": {
+                     "additionalProperties": true,
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_channel_id"
+                     },
+                     "type": "array"
+                 }
+@@ -18001,7 +18001,7 @@
+                     "format": "uri"
+                 },
+                 "team": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "avatar_hash": {
+                     "type": "string"
+@@ -18113,7 +18113,7 @@
+                 },
+                 "pinned_to": {
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_channel"
+                     },
+                     "type": "array"
+                 },
+@@ -18124,7 +18124,7 @@
+                     "type": "string"
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_comment_id"
+                 }
+             },
+             "title": "File Comment Object"
+@@ -18155,10 +18155,10 @@
+                     "type": "string"
+                 },
+                 "last_read": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_ts"
+                 },
+                 "creator": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 },
+                 "is_member": {
+                     "type": "boolean"
+@@ -18182,7 +18182,7 @@
+                             "type": "string"
+                         },
+                         "creator": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_topic_purpose_creator"
+                         }
+                     }
+                 },
+@@ -18190,7 +18190,7 @@
+                     "type": "integer"
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_channel_id"
+                 },
+                 "is_org_shared": {
+                     "type": "boolean"
+@@ -18208,7 +18208,7 @@
+                     "type": "integer"
+                 },
+                 "accepted_user": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 },
+                 "is_pending_ext_shared": {
+                     "type": "boolean"
+@@ -18235,7 +18235,7 @@
+                             "type": "string"
+                         },
+                         "creator": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_topic_purpose_creator"
+                         }
+                     }
+                 },
+@@ -18244,7 +18244,7 @@
+                     "uniqueItems": true,
+                     "type": "array",
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_user_id"
+                     }
+                 },
+                 "is_private": {
+@@ -18255,7 +18255,7 @@
+                     "uniqueItems": true,
+                     "type": "array",
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_channel_name"
+                     }
+                 },
+                 "num_members": {
+@@ -18272,7 +18272,7 @@
+                     "uniqueItems": true,
+                     "type": "array",
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_team"
+                     }
+                 },
+                 "unread_count": {
+@@ -18344,10 +18344,10 @@
+                     "type": "string"
+                 },
+                 "last_read": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_ts"
+                 },
+                 "creator": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 },
+                 "is_moved": {
+                     "type": "integer"
+@@ -18380,7 +18380,7 @@
+                             "type": "string"
+                         },
+                         "creator": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_topic_purpose_creator"
+                         }
+                     }
+                 },
+@@ -18406,7 +18406,7 @@
+                             "type": "string"
+                         },
+                         "creator": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_topic_purpose_creator"
+                         }
+                     }
+                 },
+@@ -18415,7 +18415,7 @@
+                     "uniqueItems": true,
+                     "type": "array",
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_user_id"
+                     }
+                 },
+                 "priority": {
+@@ -18432,7 +18432,7 @@
+                     ]
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_group_id"
+                 },
+                 "unread_count_display": {
+                     "type": "integer"
+@@ -18457,7 +18457,7 @@
+                 },
+                 "users": {
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_user_id"
+                     },
+                     "type": "array"
+                 }
+@@ -18501,7 +18501,7 @@
+                     "type": "string"
+                 },
+                 "team_id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "is_ultra_restricted": {
+                     "type": "boolean"
+@@ -18510,7 +18510,7 @@
+                     "type": "boolean"
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 }
+             }
+         },
+@@ -18539,7 +18539,7 @@
+                     "type": "string"
+                 },
+                 "team": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "real_name": {
+                     "type": "string"
+@@ -18604,10 +18604,10 @@
+                             "type": "string"
+                         },
+                         "last_read": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_ts"
+                         },
+                         "creator": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_user_id"
+                         },
+                         "is_member": {
+                             "type": "boolean"
+@@ -18631,7 +18631,7 @@
+                                     "type": "string"
+                                 },
+                                 "creator": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_topic_purpose_creator"
+                                 }
+                             }
+                         },
+@@ -18645,7 +18645,7 @@
+                             "type": "boolean"
+                         },
+                         "id": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_channel"
+                         },
+                         "is_org_shared": {
+                             "type": "boolean"
+@@ -18654,7 +18654,7 @@
+                             "type": "boolean"
+                         },
+                         "user": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_user_id"
+                         },
+                         "shares": {
+                             "minItems": 0,
+@@ -18671,13 +18671,13 @@
+                                 "type": "object",
+                                 "properties": {
+                                     "accepted_user": {
+-                                        "type": "string"
++                                        "$ref": "#/definitions/defs_user_id"
+                                     },
+                                     "is_active": {
+                                         "type": "boolean"
+                                     },
+                                     "user": {
+-                                        "type": "string"
++                                        "$ref": "#/definitions/defs_user_id"
+                                     },
+                                     "team": {
+                                         "$ref": "#/definitions/objs_team"
+@@ -18695,7 +18695,7 @@
+                             "type": "integer"
+                         },
+                         "accepted_user": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_user_id"
+                         },
+                         "is_pending_ext_shared": {
+                             "type": "boolean"
+@@ -18717,7 +18717,7 @@
+                             "uniqueItems": true,
+                             "type": "array",
+                             "items": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_team"
+                             }
+                         },
+                         "is_read_only": {
+@@ -18739,7 +18739,7 @@
+                                     "type": "string"
+                                 },
+                                 "creator": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_topic_purpose_creator"
+                                 }
+                             }
+                         },
+@@ -18754,7 +18754,7 @@
+                             "uniqueItems": true,
+                             "type": "array",
+                             "items": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_channel_name"
+                             }
+                         },
+                         "num_members": {
+@@ -18774,7 +18774,7 @@
+                             "uniqueItems": true,
+                             "type": "array",
+                             "items": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_team"
+                             }
+                         },
+                         "unread_count": {
+@@ -18843,10 +18843,10 @@
+                             "type": "string"
+                         },
+                         "last_read": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_ts"
+                         },
+                         "creator": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_user_id"
+                         },
+                         "is_member": {
+                             "type": "boolean"
+@@ -18870,7 +18870,7 @@
+                                     "type": "string"
+                                 },
+                                 "creator": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_topic_purpose_creator"
+                                 }
+                             }
+                         },
+@@ -18884,7 +18884,7 @@
+                             "type": "boolean"
+                         },
+                         "id": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_channel"
+                         },
+                         "is_org_shared": {
+                             "type": "boolean"
+@@ -18893,7 +18893,7 @@
+                             "type": "boolean"
+                         },
+                         "user": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_user_id"
+                         },
+                         "shares": {
+                             "minItems": 0,
+@@ -18910,13 +18910,13 @@
+                                 "type": "object",
+                                 "properties": {
+                                     "accepted_user": {
+-                                        "type": "string"
++                                        "$ref": "#/definitions/defs_user_id"
+                                     },
+                                     "is_active": {
+                                         "type": "boolean"
+                                     },
+                                     "user": {
+-                                        "type": "string"
++                                        "$ref": "#/definitions/defs_user_id"
+                                     },
+                                     "team": {
+                                         "$ref": "#/definitions/objs_team"
+@@ -18934,7 +18934,7 @@
+                             "type": "integer"
+                         },
+                         "accepted_user": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_user_id"
+                         },
+                         "is_pending_ext_shared": {
+                             "type": "boolean"
+@@ -18956,7 +18956,7 @@
+                             "uniqueItems": true,
+                             "type": "array",
+                             "items": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_team"
+                             }
+                         },
+                         "is_read_only": {
+@@ -18978,7 +18978,7 @@
+                                     "type": "string"
+                                 },
+                                 "creator": {
+-                                    "type": "string"
++                                    "$ref": "#/definitions/defs_topic_purpose_creator"
+                                 }
+                             }
+                         },
+@@ -18987,7 +18987,7 @@
+                             "uniqueItems": true,
+                             "type": "array",
+                             "items": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_user_id"
+                             }
+                         },
+                         "pin_count": {
+@@ -19001,7 +19001,7 @@
+                             "uniqueItems": true,
+                             "type": "array",
+                             "items": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_channel_name"
+                             }
+                         },
+                         "num_members": {
+@@ -19021,7 +19021,7 @@
+                             "uniqueItems": true,
+                             "type": "array",
+                             "items": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_team"
+                             }
+                         },
+                         "unread_count": {
+@@ -19089,10 +19089,10 @@
+                             "type": "integer"
+                         },
+                         "user": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_user_id"
+                         },
+                         "id": {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_dm_id"
+                         },
+                         "is_im": {
+                             "type": "boolean"
+@@ -19126,7 +19126,7 @@
+                     "type": "string"
+                 },
+                 "id": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "email_domain": {
+                     "type": "string"
+@@ -19188,7 +19188,7 @@
+                     "type": "string"
+                 },
+                 "team": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "real_name": {
+                     "type": "string"
+@@ -19253,7 +19253,7 @@
+                     }
+                 },
+                 "last_read": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_ts"
+                 },
+                 "text": {
+                     "type": "string"
+@@ -19280,17 +19280,17 @@
+                         "type": "object",
+                         "properties": {
+                             "ts": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_ts"
+                             },
+                             "user": {
+-                                "type": "string"
++                                "$ref": "#/definitions/defs_user_id"
+                             }
+                         }
+                     },
+                     "type": "array"
+                 },
+                 "user_team": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "subscribed": {
+                     "type": "boolean"
+@@ -19308,7 +19308,7 @@
+                     "type": "string"
+                 },
+                 "ts": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_ts"
+                 },
+                 "subtype": {
+                     "type": "string"
+@@ -19320,19 +19320,19 @@
+                     "type": "string"
+                 },
+                 "source_team": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "user_profile": {
+                     "$ref": "#/definitions/objs_user_profile_short"
+                 },
+                 "user": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 },
+                 "old_name": {
+                     "type": "string"
+                 },
+                 "thread_ts": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_ts"
+                 },
+                 "permalink": {
+                     "type": "string",
+@@ -19346,7 +19346,7 @@
+                 },
+                 "pinned_to": {
+                     "items": {
+-                        "type": "string"
++                        "$ref": "#/definitions/defs_channel"
+                     },
+                     "type": "array"
+                 },
+@@ -19357,15 +19357,15 @@
+                     "type": "boolean"
+                 },
+                 "team": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_team"
+                 },
+                 "inviter": {
+-                    "type": "string"
++                    "$ref": "#/definitions/defs_user_id"
+                 },
+                 "bot_id": {
+                     "items": [
+                         {
+-                            "type": "string"
++                            "$ref": "#/definitions/defs_bot_id"
+                         },
+                         {
+                             "type": "null",
